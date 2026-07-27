@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 - Task 11.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Week 6 - Asynchronous JavaScript</h1>
+    <h2>My practices </h2>
+    <p>Open the browser console (F12 → Console) to see the output.</p>
+
+    <!--Task 12.4 - Search & Filter -->
+
+<div class="controls">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search by name or email...">
+
+    <select id="sort">
+        <option value="az">Sort A-Z</option>
+        <option value="za">Sort Z-A</option>
+    </select>
+
+    <select id="city-filter">
+        <option value="all">All Cities</option>
+    </select>
+
+</div>
+    
+<!--Task 12.2 - User Directory-->
+<div id="app">
+    <h1>User Directory</h1>
+
+    <div id="loading">
+        Loading...
+    </div>
+
+    <div id="error"></div>
+
+    <div id="users-container"></div>
+</div>
+    <!--Task 12.3 - Create Post -->
+
+<h2>Create a New Post</h2>
+
+<form id="post-form">
+    <input
+        type="text"
+        id="title"
+        placeholder="Enter post title"
+        required>
+
+    <br><br>
+
+    <textarea
+        id="body"
+        placeholder="Enter post content"
+        required></textarea>
+
+    <br><br>
+
+    <input
+        type="number"
+        id="userId"
+        placeholder="User ID"
+        required>
+
+    <br><br>
+
+    <button type="submit">Create Post</button>
+</form>
+
+<div id="post-result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
